@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Train Booking</title>
+    <link rel="icon" href="./online-booking.png" type="image/png">
+    <style>
+        body{
+            background-color: #faeee7;
+        }
+
+        @media screen and (max-width: 600px){
+            body{
+                background-color: #a8948d;
+            }
+        }
+
+        @media screen and (max-width: 768px){
+            body{
+                background-color: #a8948d;
+            }
+        }
+        .main-heading{
+            color: #33272a;
+            font-size: 60px;
+            text-align: center;
+            padding: 0;
+        }
+        .main-img{
+            border: solid 2px black;
+            border-radius: 20px 20px 20px 20px;
+            height: 400px;
+            width:  400px;
+            box-shadow: 10px 10px  #ffc6c7;
+        }
+        .head-content{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-style:inherit;
+        }
+        .main-content{
+            width: 400px;
+            font-size: 30px;
+            font-style:inherit;
+            font-display: auto;
+        }
+        .form{
+            font-size: 40px;
+            color: #33272a;
+            font-style:inherit;
+            text-align: center;
+        }
+
+        .form-content{
+            color: #33272a;
+            font-size: 20px;
+        }
+
+        .btn{
+            background-color: #ff8ba7;
+            color: #33272a;
+           
+        }
+
+        .img-1{
+            border: solid 2px black;
+            border-radius: 20px 20px 20px 20px;
+            height: 400px;
+            width:  400px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!--header section-->
+    <header>
+        <h1 class="main-heading">Train Booking</h1>
+    </header>
+
+    <div class="head-content">
+        <img src="main-img.jpg" class="main-img" alt="Train">
+        <div class="main-content">
+            <p>Trains are wonderful ... To travel by train is to see nature and human beings, towns and river, in fact ,to see life.</p>
+            <p>Trains are designed to a certain gauge, or distance between rails.</p>
+        </div>
+    </div>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <!--form-content-->
+    
+       <div class="form-content">
+           <form>
+              <h2 class="form">Train Registration Form</h2>
+                <div>
+                   <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required><br><br>
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" id="email" required><br><br>
+
+                     <label for="number">Phone Number</label>
+                     <input type="text" id="Phone" name="Phone" required><br><br>
+
+                     <label for="number">Password</label>
+                     <input type="text" id="Password" name="Password" required><br><br>
+
+                     <label for="from">From</label>
+                     <input type="text" id="from" name="from" required><br><br>
+
+                    <label for="to">To</label>
+                    <input type="text" id="to" name="to" required><br><br>
+
+                    <label for="date">Travel Date</label>
+                    <input type="date" id="date" name="date" required><br><br>
+
+                    <label for="class">Class</label>
+                    <select id="class" name="class" required><br><br>
+                         <option value="sleeper">Sleeper</option>
+                         <option value="ac3">AC 3-Tier</option>
+                         <option value="ac2">AC 2-Tier</option>
+                         <option value="ac1">AC 1-Tier</option>
+                     </select><br><br>
+
+                     <label for="passengers">Number of Passengers</label>
+                     <input type="number" id="passengers" name="passengers" min="1" required><br><br>
+
+                     <button class="btn">Book Now</button>
+                </div> 
+            </form>
+        </div>
+    
+
+</body>
+</html>
